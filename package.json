@@ -1,0 +1,25 @@
+{
+  "name": "attendance-calendar",
+  "version": "1.0.0",
+  "description": "a calendar javascript api which help you display your attendance data in calendar format",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "browser-sync": "^2.26.3",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^4.0.2"
+  },
+  "scripts": {
+    "dev": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jitangupta/attendance-calendar.git"
+  },
+  "author": "jitan gupta",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jitangupta/attendance-calendar/issues"
+  },
+  "homepage": "https://github.com/jitangupta/attendance-calendar#readme"
+}

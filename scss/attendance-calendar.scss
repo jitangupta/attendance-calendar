@@ -1,0 +1,68 @@
+.attendance-calendar {
+    background-color: White;
+    border-color: #e51937;
+    border-width: 1px;
+    border-style: solid;
+    width: 100%;
+    border-collapse: collapse;
+
+    .calender-for-month {
+        background-color: #dcdcdc;
+        padding: 11px;
+        text-align: center;
+        font-size: 15px;
+        color: Black;
+    }
+
+    .week-days {
+        color: Black;
+        background-color: #f1f1f1;
+        border: 1px solid #e51937;
+        font-weight: normal;
+        padding: 10px;
+        width: 14%;
+    }
+
+    .day {
+        border-width: 1px;
+        border: 1px Solid #e51937;
+        padding: 5px;
+
+        .details {
+            width: 100%;
+
+            .date {
+                font-size: 15px;
+            }
+
+            .tag {
+                color: #e51937;
+                font-size: 15px;
+                text-align: right;
+                margin-bottom: 7px;
+                display: block;
+            }
+
+            .in, .out {
+                color: #7F7975;
+                font-size: 7pt;
+            }
+        }
+    }
+
+    .day.holiday {
+        background-color: #f1f1f1;
+    }
+
+    .day.today {
+        color: #ffffff;
+        background: #e51937;
+
+        .details {
+            .tag, .in, .out {
+                color: #ffffff;
+            }
+        }
+    }
+
+}
