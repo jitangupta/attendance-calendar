@@ -58,29 +58,28 @@ class AttendanceCalendar {
                     var dayInList = false;
 
                     if (this.day.weekDay == weekdays[j]) {
-                        var detail_table = document.createElement("table");
-                        detail_table.classList.add("details");
-                        var table_details = "";
+                        var detail_container = document.createElement("div");
+                        detail_container.classList.add("details");
+                        var div_details = "";
                         //Day & Tag
-                        table_details+= "<tr><td class='date'>" + this.day.monthDay + "</td><td class='tag'>" + this.day.tag + "</td></tr>";
+                        div_details+= "<div class='date'>" + this.day.monthDay + "</div><div class='tag'>" + this.day.tag + "</div>";
                        
 
                         //In Time
                         if (this.day.inTime != "00.00") {
-                            table_details += "<tr><td class='in' colspan='2'>&gt; " + this.day.inTime + "</td></tr>";
+                            div_details += "<div class='in'>&gt; " + this.day.inTime + "</div>";
                            
                         } else {
-                            table_details +="<tr><td class='in' colspan='2'>&nbsp;</td></tr>";
+                            div_details +="<div class='in'>&nbsp;</div>";
                             
                         }
 
                         //Out Time
                         if (this.day.outTime != "00.00") {
-                            table_details +="<tr><td class='out' colspan='2'>&lt; " + this.day.outTime + "</td></tr>";
+                            div_details +="<div class='out'>&lt; " + this.day.outTime + "</div>";
                            
                         } else {
-                            table_details +="<tr><td class='out' colspan='2'>&nbsp;</td></tr>";
-                           
+                            div_details +="<div class='out' colspan='2'>&nbsp;</div>";
                         }
 
                         //Check Present date
@@ -89,8 +88,8 @@ class AttendanceCalendar {
                             td.classList.add('today');
                         }
 
-                        detail_table.innerHTML = table_details;
-                        td.append(detail_table);
+                        detail_container.innerHTML = div_details;
+                        td.append(detail_container);
 
                         counter++;
                         dayInList = true;

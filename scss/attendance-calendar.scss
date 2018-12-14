@@ -1,5 +1,6 @@
 $border-color:#9C27B0;
 $primary-color:#e91e63;
+
 .attendance-calendar {
     background-color: White;
     border-color: $border-color;
@@ -7,7 +8,7 @@ $primary-color:#e91e63;
     border-style: solid;
     width: 100%;
     border-collapse: collapse;
-
+    
     .calender-for-month {
         background-color: #dcdcdc;
         padding: 11px;
@@ -23,6 +24,10 @@ $primary-color:#e91e63;
         font-weight: normal;
         padding: 10px;
         width: 14%;
+        @media(max-width:640px) {
+            padding: 7px;
+            font-size: 12.5px;
+        }
     }
 
     .day {
@@ -35,6 +40,17 @@ $primary-color:#e91e63;
 
             .date {
                 font-size: 15px;
+                width: 30%;
+                display: inline-block;
+                @media(max-width:640px) {
+                    font-size: 12.5px;
+                }
+                @media(max-width:440px) {
+                    font-size: 11px;
+                }
+                @media(max-width:360px) {
+                    font-size: 10px;
+                }
             }
 
             .tag {
@@ -42,12 +58,25 @@ $primary-color:#e91e63;
                 font-size: 15px;
                 text-align: right;
                 margin-bottom: 7px;
-                display: block;
+                display: inline-block;
+                width: 70%;
+                @media(max-width:640px) {
+                    font-size: 12.5px;
+                }
+                @media(max-width:440px) {
+                    font-size: 11px;
+                }
+                @media(max-width:360px) {
+                    font-size: 10px;
+                }
             }
 
             .in, .out {
                 color: #7F7975;
                 font-size: 7pt;
+                @media(max-width:640px) {
+                    font-size: 9px;
+                }
             }
         }
     }
@@ -66,5 +95,5 @@ $primary-color:#e91e63;
             }
         }
     }
-
+    
 }

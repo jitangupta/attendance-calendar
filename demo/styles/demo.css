@@ -23,3 +23,9 @@ html{
     max-width: 600px;
     margin: 0 auto;
 }
+@media(max-width:640px){
+    .calender_container{
+        max-width: auto;
+        margin: 0 15px;
+    }
+}

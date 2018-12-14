@@ -24,6 +24,13 @@
   width: 14%;
 }
 
+@media (max-width: 640px) {
+  .attendance-calendar .week-days {
+    padding: 7px;
+    font-size: 12.5px;
+  }
+}
+
 .attendance-calendar .day {
   border-width: 1px;
   border: 1px Solid #9C27B0;
@@ -36,6 +43,26 @@
 
 .attendance-calendar .day .details .date {
   font-size: 15px;
+  width: 30%;
+  display: inline-block;
+}
+
+@media (max-width: 640px) {
+  .attendance-calendar .day .details .date {
+    font-size: 12.5px;
+  }
+}
+
+@media (max-width: 440px) {
+  .attendance-calendar .day .details .date {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 360px) {
+  .attendance-calendar .day .details .date {
+    font-size: 10px;
+  }
 }
 
 .attendance-calendar .day .details .tag {
@@ -43,12 +70,37 @@
   font-size: 15px;
   text-align: right;
   margin-bottom: 7px;
-  display: block;
+  display: inline-block;
+  width: 70%;
+}
+
+@media (max-width: 640px) {
+  .attendance-calendar .day .details .tag {
+    font-size: 12.5px;
+  }
+}
+
+@media (max-width: 440px) {
+  .attendance-calendar .day .details .tag {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 360px) {
+  .attendance-calendar .day .details .tag {
+    font-size: 10px;
+  }
 }
 
 .attendance-calendar .day .details .in, .attendance-calendar .day .details .out {
   color: #7F7975;
   font-size: 7pt;
+}
+
+@media (max-width: 640px) {
+  .attendance-calendar .day .details .in, .attendance-calendar .day .details .out {
+    font-size: 9px;
+  }
 }
 
 .attendance-calendar .day.holiday {
