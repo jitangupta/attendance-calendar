@@ -19,6 +19,23 @@ html{
     font-weight: 400;
     color: #9C27B0;
 }
+.helpful-links{
+    text-align: center;
+    margin: 30px;
+}
+.helpful-links a{
+    padding: 15px 30px;
+    border: 1px solid #9C27B0;
+    background: #fff;
+    text-decoration: none;
+    color: #000000;
+    border-radius: 4px;
+    margin: 10px;
+    display: inline-block;
+}
+.helpful-links a:focus{
+    outline: none;
+}
 .calender_container{
     max-width: 600px;
     margin: 0 auto;
