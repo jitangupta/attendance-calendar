@@ -1,6 +1,6 @@
 {
   "name": "attendance-calendar",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "a calendar javascript api which help you display your attendance data in calendar format",
   "main": "gulpfile.js",
   "scripts": {
