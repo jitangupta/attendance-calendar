@@ -145,7 +145,3 @@ class Day {
   public inTime: string;
   public outTime: string;
 }
-
-export { AttendanceCalendar };
-
-export { Day };
