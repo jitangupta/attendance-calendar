@@ -2,7 +2,6 @@ var cal_container = document.getElementById('calender_container');
 var data = '';
 loadJSON(function(response){
     data = JSON.parse(response);
-    console.log(data);
 });
 
 //Initialize Calendar
@@ -17,7 +16,7 @@ function loadJSON(callback) {
   xobj.overrideMimeType("application/json");
   xobj.open("GET", "demo/demo-data.json", false);
   xobj.onreadystatechange = function() {
-    if (xobj.readyState == 4 && xobj.status == "200") {
+    if (xobj.readyState === 4 && xobj.status === "200") {
       callback(xobj.responseText);
     }
   };
