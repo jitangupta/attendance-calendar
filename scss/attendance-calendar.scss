@@ -1,6 +1,8 @@
+$border-color:#9C27B0;
+$primary-color:#e91e63;
 .attendance-calendar {
     background-color: White;
-    border-color: #e51937;
+    border-color: $border-color;
     border-width: 1px;
     border-style: solid;
     width: 100%;
@@ -17,7 +19,7 @@
     .week-days {
         color: Black;
         background-color: #f1f1f1;
-        border: 1px solid #e51937;
+        border: 1px solid $border-color;
         font-weight: normal;
         padding: 10px;
         width: 14%;
@@ -25,7 +27,7 @@
 
     .day {
         border-width: 1px;
-        border: 1px Solid #e51937;
+        border: 1px Solid $border-color;
         padding: 5px;
 
         .details {
@@ -36,7 +38,7 @@
             }
 
             .tag {
-                color: #e51937;
+                color: $primary-color;
                 font-size: 15px;
                 text-align: right;
                 margin-bottom: 7px;
@@ -56,7 +58,7 @@
 
     .day.today {
         color: #ffffff;
-        background: #e51937;
+        background: $primary-color;
 
         .details {
             .tag, .in, .out {

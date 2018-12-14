@@ -4,7 +4,7 @@
   "description": "a calendar javascript api which help you display your attendance data in calendar format",
   "main": "gulpfile.js",
   "scripts": {
-   "dev":"gulp"
+    "dev": "gulp"
   },
   "repository": {
     "type": "git",
@@ -18,7 +18,16 @@
   "homepage": "https://github.com/jitangupta/attendance-calendar#readme",
   "devDependencies": {
     "browser-sync": "^2.26.3",
+    "del": "^3.0.0",
     "gulp": "^4.0.0",
-    "gulp-sass": "^4.0.2"
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-clean-css": "^4.0.0",
+    "gulp-html-replace": "^1.6.2",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-typescript": "^5.0.0",
+    "gulp-uglify": "^3.0.1",
+    "merge-stream": "^1.0.1",
+    "typescript": "^3.2.2"
   }
 }
